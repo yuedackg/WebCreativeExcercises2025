@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> /* HTML固有のCSSを書くときはここに書く */
+        *{
+            /* 線と余白を含めて指定値にするときに使用する */
+            box-sizing: border-box;
+            /* 要素の外枠には灰色の線を付ける。 */
+            border: solid 1px gray;
+        }
+    </style>
+    <!-- 個々から下は、CSSを別のファイルに分離するときに使う。 -->
+    <!-- 分離するメリットは、CSSを共有してデザインをそろえる -->
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <!-- 画面の上部にはヘッダーと呼ばれる部分になる -->
+    <header>
+        <h1>Web page title ( header ) </h1>
+
+    </header>
+    <!--
+        ナビゲーションは幅が広いときは左サイドになる。狭いときには、上部に配置する。
+        さじ加減は、CSSの中で幅を見て切り替える。
+    -->
+    <nav>
+        this section is nav.
+        <!-- 番号なしリスト（<ul>）を使って、メニューをアイテム化する -->
+        <ul>
+            <!-- 個別のメニューはリスト要素 -->
+            <li>sample1</li>
+            <li>sample2</li>
+            <li>sample3</li>
+            <li>sample4</li>
+            <li>sample5</li>
+            
+        </ul>
+    </nav>
+    <!-- コンテンツはタグで一つまとめる -->
+    <main>
+        this section is main.
+        <!-- 画面の記述単位で、必ずarticleもしくはsection単位で作成する -->
+        <!-- 各要素にはCSSの設定を変更するために名前を付ける。（id名） -->
+        <article id="sample1">
+            <h2>sample 1 title</h2>
+
+        </article>
+        <article id="sample2">
+            <h2>sample 2 title</h2>
+
+
+        </article>
+        <article id="sample3">
+            <h2>sample 3 title</h2>
+
+
+        </article>
+        <article id="sample4">
+            <h2>sample 4 title</h2>
+
+
+        </article>
+        <article id="sample5">
+            <h2>sample 5 title</h2>
+
+        </article>
+
+    </main>
+    <!-- 画面の下に来る要素はfooter -->
+    <footer>
+        this section is footer.<br>
+        <small>copyright 2025 (c) CKGMC </small>
+
+    </footer>
+</body>
+</html>
